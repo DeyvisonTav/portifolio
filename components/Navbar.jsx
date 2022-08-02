@@ -125,7 +125,7 @@ const Navbar = () => {
             </div>
             <div className='border-b border-gray-300 my-4'>
               <p className='w-[85%] md:w-[90%] py-4'>
-                Vamos Construir algo incrível juntos
+                Vamos construir algo incrível juntos?
               </p>
             </div>
           </div>
