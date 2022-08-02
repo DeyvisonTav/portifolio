@@ -29,8 +29,8 @@ const primeflix = () => {
           <p>
             O projeto é pra quem tá indeciso e quer assistir um filme recente.
             Ele consome uma API usando o axios que lista os últimos 10 filmes
-            lançados ainda coloquei a opção de salvar, ver sinopse, trailer...
-            enfim estilisei tudo usando tailwindcss
+            lançados, ainda coloquei a opção de salvar, ver sinopse, trailer...
+            enfim, estilisei tudo usando tailwindcss
           </p>
           <a
             href="https://github.com/DeyvisonTav/Prime-Flix"

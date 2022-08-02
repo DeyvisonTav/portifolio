@@ -29,7 +29,7 @@ const miniblog = () => {
           <p>
             Este projeto consiste em um blog feito com React no front-end e
             Firebase no back-end.
-            Ele permite a um usuario logado, fazer posts sobre qualquer assunto!
+            Ele permite que o usuario logado, faça posts sobre qualquer assunto!
           </p>
           <a
             href="https://github.com/DeyvisonTav/Mini-Blog"

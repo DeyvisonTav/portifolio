@@ -30,11 +30,11 @@ const secret = () => {
             Secret Word - é um projeto todo desenvolvido em React Js para
             mostrar meus conhecimentos. Ele é um game no estilo caça palavras em
             que o player tem 5 chances para ir adivinhando as letras da palavra
-            secreta até completala, o player tem acesso a uma dica sobre a
-            palavra. O game também mostras as letras que o Player for errando. A
-            cada palavra acertada o player ganha 100 pontos. No final do jogo o
+            secreta até completá-la, o player tem acesso a uma dica sobre a
+            palavra. O game também mostra as letras que o Player errou no decorrer do jogo. A
+            cada palavra acertada, o player ganha 100 pontos. No final do jogo o
             player tem o total de pontos obtidos em score e a opção de inicar
-            uma nova partida
+            uma nova partida.
           </p>
           <a
             href="https://twitch-nextjs-tailwind.vercel.app/"

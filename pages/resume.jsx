@@ -70,7 +70,7 @@ const resume = () => {
         </div>
       </div>
       <div className="flex justify-center pb-8">
-        <a href="https://drive.google.com/drive/folders/1Mim7I7xQOBuHsOK6AQXfGXobZNqkubH0" target='blanck'>
+        <a href="https://drive.google.com/file/d/1XnJHc-QffWED8VNaUldq5iyv8wU5Bexy/view?usp=sharing" target='blanck'>
         <button className=" px-8 p-4 text-gray-100 mt-4">Currículo</button>
         </a>
       </div>
