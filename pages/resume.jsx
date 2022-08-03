@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const resume = () => {
   return (
-    <> 
+    <>
       <Head>
         <title>Deyvison | Cv</title>
 
@@ -49,7 +49,7 @@ const resume = () => {
         <p>
           Busco aplicar minha experiência como desenvolvedor Front-end no
           desenvolvimento de interfaces modernas e responsivas. Aprimorar minhas
-          habilidades de trabalho em equipe, projetando uma evolução continua e
+          habilidades de trabalho em equipe, projetando uma evolução contínua e
           gradual dentro da empresa. Me desenvolver junto com o estímulo e apoio
           de uma equipe comprometida com a inovação do mercado!
         </p>
@@ -70,8 +70,11 @@ const resume = () => {
         </div>
       </div>
       <div className="flex justify-center pb-8">
-        <a href="https://drive.google.com/file/d/1XnJHc-QffWED8VNaUldq5iyv8wU5Bexy/view?usp=sharing" target='blanck'>
-        <button className=" px-8 p-4 text-gray-100 mt-4">Currículo</button>
+        <a
+          href="https://drive.google.com/file/d/1N6Ng52qg6aZLrC3A7kaOWT9i_TBkSw8V/view?usp=sharing"
+          target="blanck"
+        >
+          <button className=" px-8 p-4 text-gray-100 mt-4">Currículo</button>
         </a>
       </div>
     </>
