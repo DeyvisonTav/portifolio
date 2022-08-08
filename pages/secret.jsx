@@ -31,20 +31,20 @@ const secret = () => {
             mostrar meus conhecimentos. Ele é um game no estilo caça palavras em
             que o player tem 5 chances para ir adivinhando as letras da palavra
             secreta até completá-la, o player tem acesso a uma dica sobre a
-            palavra. O game também mostra as letras que o Player errou no decorrer do jogo. A
-            cada palavra acertada, o player ganha 100 pontos. No final do jogo o
-            player tem o total de pontos obtidos em score e a opção de inicar
-            uma nova partida.
+            palavra. O game também mostra as letras que o Player errou no
+            decorrer do jogo. A cada palavra acertada, o player ganha 100
+            pontos. No final do jogo o player tem o total de pontos obtidos em
+            score e a opção de inicar uma nova partida.
           </p>
           <a
-            href="https://twitch-nextjs-tailwind.vercel.app/"
+            href="https://jogo-secret-words.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Demonstração</button>
           </a>
           <a
-            href="https://github.com/fireclint/twitch-nextjs-tailwind"
+            href="https://github.com/DeyvisonTav/jogo-secret-words"
             target="_blank"
             rel="noreferrer"
           >
@@ -67,7 +67,6 @@ const secret = () => {
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> ApiRest
               </p>
-            
             </div>
           </div>
         </div>
