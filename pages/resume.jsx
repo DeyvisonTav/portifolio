@@ -71,7 +71,7 @@ const resume = () => {
       </div>
       <div className="flex justify-center pb-8">
         <a
-          href="https://drive.google.com/file/d/1N6Ng52qg6aZLrC3A7kaOWT9i_TBkSw8V/view?usp=sharing"
+          href="https://drive.google.com/file/d/14afmUAj-pTlgmL10XBtXVSXiUSJbiYIP/view?usp=sharing"
           target="blanck"
         >
           <button className=" px-8 p-4 text-gray-100 mt-4">Currículo</button>
