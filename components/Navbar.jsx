@@ -1,57 +1,42 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React, { useState, useEffect } from 'react'
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai'
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 // import { useRouter } from 'next/router';
-import NavLogo from '../public/assets/navLogo.png'
+import NavLogo from "../public/assets/navLogo.png";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)
-  const [shadow, setShadow] = useState(false)
-  const [navBg, setNavBg] = useState('#ecf0f3')
-  const [linkColor, setLinkColor] = useState('#1f2937')
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
-
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
+  const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+;
 
   const handleNav = () => {
-    setNav(!nav)
-  }
+    setNav(!nav);
+  };
 
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
-        setShadow(true)
+        setShadow(true);
       } else {
-        setShadow(false)
+        setShadow(false);
       }
-    }
-    window.addEventListener('scroll', handleShadow)
-  }, [])
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
   return (
+  
     <div
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'
-          : 'fixed w-full h-20 z-[100]'
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full h-20 z-[100]"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -81,7 +66,7 @@ const Navbar = () => {
               <Link href="/#contact">Contato</Link>
             </li>
           </ul>
-          {/* Hamburger Icon */}
+
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
@@ -92,19 +77,16 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      {/* Overlay */}
       <div
         className={
-          nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }
       >
-        {/* Side Drawer Menu */}
         <div
           className={
             nav
-              ? ' fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
-              : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
@@ -112,7 +94,7 @@ const Navbar = () => {
               <Link href="/">
                 <a>
                   <span className="text-gray-600 text-4xl font-bold">
-                    {' '}
+                    {" "}
                     D.Tav
                   </span>
                 </a>
@@ -208,7 +190,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

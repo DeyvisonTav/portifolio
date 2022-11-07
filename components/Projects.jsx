@@ -5,6 +5,7 @@ import MiniBlog from '../public/assets/projects/MiniBlog.png'
 import Secret from '../public/assets/projects/Secret.png'
 import Nufinance from '../public/assets/projects/Nufinance.png'
 import Elianef from '../public/assets/projects/Elianef.png'
+import ecommerce from '../public/assets/projects/ecommerce.png'
 import ProjectItem from './ProjectItem'
 
 const Projects = () => {
@@ -49,15 +50,22 @@ const Projects = () => {
           />
 
           <ProjectItem
-            title="Nufinance"
+            title="ElianeFashionHair"
             backgroundImg={Elianef}
             projectUrl="/elianef"
             tech="Vanilla"
           />
+
+          <ProjectItem
+            title="Ecommerce"
+            backgroundImg={ecommerce}
+            projectUrl="/ecommerce"
+            tech="React"
+          />
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Projects
