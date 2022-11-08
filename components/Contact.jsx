@@ -51,7 +51,7 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">CONECTE-SE COMIGO</p>
+                <p className="uppercase pt-8">CONECTE-SE COMIGO (deyvisontav@gmail.com)</p>
                 <div className="flex items-center justify-center gap-6 md:gap-36 py-4">
                   <a
                     href="https://www.linkedin.com/in/deyvison-tavares/"
