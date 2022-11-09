@@ -56,12 +56,12 @@ const Projects = () => {
             tech="Vanilla"
           />
 
-          <ProjectItem
+          {/* <ProjectItem
             title="Ecommerce"
             backgroundImg={ecommerce}
             projectUrl="/ecommerce"
             tech="React"
-          />
+          /> */}
         </div>
       </div>
     </div>
