@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
@@ -12,8 +13,6 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
-;
-
   const handleNav = () => {
     setNav(!nav);
   };
@@ -30,12 +29,13 @@ const Navbar = () => {
   }, []);
 
   return (
-  
     <div
       style={{ backgroundColor: `${navBg}` }}
+      data-aos="zoom-in"
+      data-aos-duration="1000"
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-1000"
           : "fixed w-full h-20 z-[100]"
       }
     >
@@ -78,6 +78,7 @@ const Navbar = () => {
       </div>
 
       <div
+       
         className={
           nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }

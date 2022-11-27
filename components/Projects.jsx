@@ -10,7 +10,12 @@ import ProjectItem from './ProjectItem'
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full">
+    <div
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      id="projects"
+      className="w-full"
+    >
       <div className="max-w-[1240px] mx-auto px-2 py-16">
         <p className="text-xl tracking-widest uppercase text-[#666672]">
           Projetos

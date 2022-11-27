@@ -5,7 +5,11 @@ import AboutImg from '../public/assets/about.jpg'
 
 const About = () => {
   return (
-    <div  className="w-full md:h-screen p-2 flex items-center py-16">
+    <div
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      className="w-full md:h-screen p-2 flex items-center py-16"
+    >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#666672]">
@@ -41,7 +45,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default About

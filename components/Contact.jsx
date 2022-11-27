@@ -25,7 +25,12 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <div
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      id="contact"
+      className="w-full lg:h-screen"
+    >
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full ">
         <p className="text-xl tracking-widest uppercase text-[#666672]">
           Contato
@@ -51,7 +56,9 @@ const Contact = () => {
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">CONECTE-SE COMIGO (deyvisontav@gmail.com)</p>
+                <p className="uppercase pt-8">
+                  CONECTE-SE COMIGO (deyvisontav@gmail.com)
+                </p>
                 <div className="flex items-center justify-center gap-6 md:gap-36 py-4">
                   <a
                     href="https://www.linkedin.com/in/deyvison-tavares/"
