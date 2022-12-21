@@ -6,7 +6,7 @@ import Nufinance from "../public/assets/projects/Nufinance.png";
 import Elianef from "../public/assets/projects/Elianef.png";
 import ecommerce from "../public/assets/projects/ecommerce.png";
 import ProjectItem from "../components/ProjectItem";
-
+import Link from "next/link";
 export default function Project2022() {
   return (
     <div
@@ -62,6 +62,11 @@ export default function Project2022() {
           projectUrl="/ecommerce"
           tech="React"
         />
+      </div>
+      <div className="flex justify-end pt-[10rem]">
+        <Link href="/#projects">
+          <p className="underline cursor-pointer font-bold">Voltar</p>
+        </Link>
       </div>
     </div>
   );
