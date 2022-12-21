@@ -5,8 +5,6 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-// import { useRouter } from 'next/router';
-import NavLogo from "../public/assets/navLogo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -19,7 +17,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 80) {
         setShadow(true);
       } else {
         setShadow(false);
@@ -31,8 +29,6 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
-      data-aos="zoom-in"
-      data-aos-duration="1000"
       className={
         shadow
           ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-1000"
@@ -42,27 +38,27 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <a>
-            <span className="text-gray-600 text-4xl font-bold">Portifólio</span>
+            <span className="text-gray-700 text-4xl font-bold">Portifólio</span>
           </a>
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b border-black">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-900 border-black">
               <Link href="/">Home</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b border-black">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-900 border-black">
               <Link href="/#about">Sobre</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b border-black">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-900 border-black">
               <Link href="/#skills">Habilidades</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b border-black">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-900 border-black">
               <Link href="/#projects">Projetos</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b border-black">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-900 border-black">
               <Link href="/resume">Cv Deyvison</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b border-black">
+            <li className="ml-10 text-sm uppercase hover:border-b hover:text-gray-900 border-black">
               <Link href="/#contact">Contato</Link>
             </li>
           </ul>
@@ -78,7 +74,6 @@ const Navbar = () => {
       </div>
 
       <div
-       
         className={
           nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }

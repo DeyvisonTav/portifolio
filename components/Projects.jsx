@@ -1,12 +1,5 @@
-import React from 'react'
-import ToDoList from '../public/assets/projects/ToDoList.png'
-import PrimeFlix from '../public/assets/projects/PrimeFlix.png'
-import MiniBlog from '../public/assets/projects/MiniBlog.png'
-import Secret from '../public/assets/projects/Secret.png'
-import Nufinance from '../public/assets/projects/Nufinance.png'
-import Elianef from '../public/assets/projects/Elianef.png'
-import ecommerce from '../public/assets/projects/ecommerce.png'
-import ProjectItem from './ProjectItem'
+import React from "react";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -20,57 +13,24 @@ const Projects = () => {
         <p className="text-xl tracking-widest uppercase text-[#666672]">
           Projetos
         </p>
-        <h2 className="py-4">O que eu construí</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem
-            title="ToDoList "
-            backgroundImg={ToDoList}
-            projectUrl="/todolist"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Prime Flix"
-            backgroundImg={PrimeFlix}
-            projectUrl="/primeflix"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="MiniBlog"
-            backgroundImg={MiniBlog}
-            projectUrl="/miniblog"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Secret Word"
-            backgroundImg={Secret}
-            projectUrl="/secret"
-            tech="React JS"
-          />
-
-          <ProjectItem
-            title="Nufinance"
-            backgroundImg={Nufinance}
-            projectUrl="/nufinance"
-            tech="React Native"
-          />
-
-          <ProjectItem
-            title="ElianeFashionHair"
-            backgroundImg={Elianef}
-            projectUrl="/elianef"
-            tech="Vanilla"
-          />
-
-          {/* <ProjectItem
-            title="Ecommerce"
-            backgroundImg={ecommerce}
-            projectUrl="/ecommerce"
-            tech="React"
-          /> */}
+        <h2 className="py-4">O que eu construí...</h2>
+        <p className="text-base font-bold pb-5 pl-3">[clique]</p>
+        <div className="flex gap-10 shadow-2xl p-5 rounded-md w-[18.3rem]">
+          <Link href={"/Project2022"}>
+            <h2 className="cursor-pointer text-[#666672] underline-offset-auto underline w-[5rem]">
+              2022
+            </h2>
+          </Link>
+           <div><h2>|</h2></div>
+          <Link href={"/Project2023"}>
+            <h2 className="cursor-pointer text-[#666672]  underline w-[10rem]">
+              2023
+            </h2>
+          </Link>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Projects
+export default Projects;
